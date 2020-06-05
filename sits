@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+<style>
+*{
+padding:0;
+margin:0;}
+
+
+body{
+background-color:#74b9ff;
+}
+
+
+.header{
+background:#2980b9;
+height:150px;
+width:100%;
+}
+
+
+
+#my-4{width:90%;
+height:500px;
+position:absolute;
+top:700px;
+left:50%;
+transform:translate(-50%,-50%);
+box-shadow:1px 5px 2px 10px white;
+transition:all , 4s;
+
+
+
+}
+#my-4:hover{
+height:0px;
+width:0px;
+
+}
+
+
+.menu{
+background:#3498db;
+
+height:100%;
+width:500px;
+font-size:2.4rem;
+position:fixed;
+margin-top:142px;
+margin-left:0px;
+margin-right:0px;
+transform:translateX(-600px);
+transition:transform 250ms ease-in-out;
+}
+
+#icon:checked~.menu{
+transform:translateX(0px);
+}
+
+.menu li{
+size:0;
+color:#fff;
+border-bottom:1px solid black;
+transform:translatex(0);
+}
+
+.menu li a{
+color:#fff;
+display:block;
+text-decoration:none;
+text-transform:upercase;
+padding:20px;
+margin-left:100px;
+}
+.menu li a:hover{
+background-color:#3742fa;
+}
+
+#icon{
+height:40px;
+width:40px;
+position:fixed;
+margin-top:20px;
+margin-left:10px;
+}
+.spinner{
+color:black;
+height:3px;
+width:4px;
+
+}
+
+
+.logo{
+height:180px;
+width:300px;
+position:fixed;
+margin-top:-20px;
+margin-left:280px;
+}
+.veg{
+width:100%;
+position:absolute;
+margin-top:200px;
+animation:slider,9s,infinite,linear;
+}
+@keyfram slider{
+0%{ img src:image/veg.jpg;}
+35%{img src:image/Gr.jpg;}
+70%{img src:image/65.jpg;}
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+<div class="header">
+
+<input type="checkbox"id="icon">
+<lable for="icon"class="desine"></lable>
+<div class="spinner top"></div>
+<div class="spinner middle"></div>
+<div class="spinner bottom"></div>
+
+<img src="image/567.png"class="logo">
+
+
+
+
+
+<div id="slidebar"></div>
+<a href="veg.html"><img src="image/veg.jpg"class="veg"></a>
+
+
+
+</ul>
+
+<ul class="menu">
+
+<li><a href="#"><b>home</a></li>
+<li><a href="#">galray</a></li>
+  <li><a href="#">contect us</a></li>
+<li><a href="#">about us</b></a></li>
+
+</ul>
+
+
+</body>
+</html>
